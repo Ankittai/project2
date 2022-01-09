@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ebook | Blog
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="nav nav-top">
+            <div class="logo">
+                <a href="index.html"><img src="image/book2.jpg" width="150px"></a>
+            </div>
+            <div class="nav-side">
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact us</a>
+                <a href="login.html">Login/Register</a>
+            </div>
+        </nav>
+        <div class="blo">
+            <h2>Blogs</h2>
+            <div class="blo_content">
+                <div class="blo_img">
+                    <img src="image/Snapchat-879915043.jpg">
+                </div>
+                <div class="blo_text">
+                    <p>Connecting ideas and people – how talk can change our lives</p><br>
+                    <p>My name is Ankit and I am head of web development in our company.</p>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="#"><img src="image/book2.jpg" width="150px"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="about.html">About Us</a>|
+                <a href="service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="contact.html">Contact us</a>|
+                <a href="#">Login/Register</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/profile.php?id=100008597228438" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ankit-kumar-singh-9888291a5" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/ankit76671/"><i class="fa fa-instagram" target="_blank" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/AnkitKu48154563?t=9JucHOEO05IgHhfEQXHSUQ&s=08" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=+919934310292" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="mailto: ankitsingh993431@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="tel: +919934310292"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 ebook.All rights reserved</p>
+        </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyx9kKFO6UdVN1JU6RUaIJitDpjbfJVDAkoUWXm-TVMpMf59w0M0Q8CM4bsOwExqYH3/exec'
+        const form = document.forms['submit-googlesheet']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thanks for you valuable feedback!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+     </script>
+     
+     
+    </body>
+</html>

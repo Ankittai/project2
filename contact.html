@@ -1,0 +1,92 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ebook | Contact Us
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="nav nav-top">
+            <div class="logo">
+                <a href="index.html"><img src="image/book2.jpg" width="150px"></a>
+            </div>
+            <div class="nav-side">
+                <a href="about.html">About Us</a>
+                <a href="service.html">Services</a>
+                <a href="blog.html">Blogs</a>
+                <a href="contact.html">Contact us</a>
+                <a href="login.html">Login/Register</a>
+            </div>
+        </nav>
+        <div class="contact_container">
+            <h2>Contact Us</h2>
+            <div class="g_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.610958757462!2d85.39379511458893!3d26.11161538347918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed1111a6d98d5d%3A0xd0e1be1beb02f62b!2sJubba%20Sahni%20Park!5e0!3m2!1sen!2sin!4v1641729200965!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact_content">
+                <p>Address: Bihar,India </p>
+                <p>Contact: +91 9934310292 </p>
+                <p>Mailto: ankitsingh993431@gmail.com</p>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo">
+                <a href="#"><img src="image/book2.jpg" width="150px"></a>
+            </div>
+            <div class="pages">
+                <h3>Pages</h3>
+                <a href="about.html">About Us</a>|
+                <a href="service.html">Services</a>|
+                <a href="blog.html">Blogs</a>|
+                <a href="contact.html">Contact us</a>|
+                <a href="#">Login/Register</a>
+            </div>
+            <div class="doc">
+                <h3>Documents</h3>
+                <a href="">Privacy Policy</a>|
+                <a href="">Terms of Use</a>|
+                <a href="">Refund Policy</a>
+            </div>
+            <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/profile.php?id=100008597228438" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/ankit-kumar-singh-9888291a5" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/ankit76671/"><i class="fa fa-instagram" target="_blank" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/AnkitKu48154563?t=9JucHOEO05IgHhfEQXHSUQ&s=08" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <a href="https://api.WhatsApp.com/send?phone=+919934310292" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="mailto: ankitsingh993431@gmail.com" target="_blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                <a href="tel: +919934310292"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <hr>
+            <p>Copyright &copy; 2022 ebook.All rights reserved</p>
+        </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbyx9kKFO6UdVN1JU6RUaIJitDpjbfJVDAkoUWXm-TVMpMf59w0M0Q8CM4bsOwExqYH3/exec'
+        const form = document.forms['submit-googlesheet']
+     
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => alert(
+                    "Thanks for you valuable feedback!!!"))
+                .catch(error => console.error('Error!', error.message))
+        })
+     
+     </script>
+     
+     
+    </body>
+</html>
